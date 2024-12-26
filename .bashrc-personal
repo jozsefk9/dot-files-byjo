@@ -1,5 +1,7 @@
 # .bashrc
 
+helix_version="24.07"
+
 #export TERM=kitty
 export VISUAL=hx
 export EDITOR="$VISUAL"
@@ -82,7 +84,7 @@ function title {
 # Wrap Helix Editor in a function that sets the title with the arguments provided
 function hx {
     title "$@"
-    command ~/bin/helix-24.07-x86_64.AppImage "$@"
+    command ~/bin/helix-$helix_version-x86_64.AppImage "$@"
 }
 
 # YAZI start
