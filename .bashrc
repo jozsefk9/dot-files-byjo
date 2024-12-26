@@ -74,9 +74,10 @@ fi
 # new PATH dec2024
 export PATH=~/bin:$PATH
 export PATH=~/.local/bin:$PATH
-export PATH=~/bin/floorp:$PATH
-export PATH=~/bin/btop/bin:$PATH
-export PATH=~/bin/kitty/bin:$PATH
+export PATH=~/bin/floorp:$PATH # FLOORP
+export PATH=~/bin/btop/bin:$PATH # BTOP
+export PATH=~/bin/kitty/bin:$PATH # KITTY
+export PATH=~/bin/cudatext/GTK2:$PATH # CUDATEXT
 
 # FZF
 eval "$(fzf --bash)"
