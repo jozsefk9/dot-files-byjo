@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -73,11 +74,14 @@ fi
 
 # new PATH dec2024
 export PATH=~/bin:$PATH
-export PATH=~/.local/bin:$PATH
-export PATH=~/bin/floorp:$PATH # FLOORP
+export PATH=~/bin/blender:$PATH # BLENDER
 export PATH=~/bin/btop/bin:$PATH # BTOP
-export PATH=~/bin/kitty/bin:$PATH # KITTY
 export PATH=~/bin/cudatext/GTK2:$PATH # CUDATEXT
+export PATH=~/bin/floorp:$PATH # FLOORP
+export PATH=~/bin/kitty/bin:$PATH # KITTY
+export PATH=~/bin/REAPER:$PATH # REAPER
+export PATH=~/bin/WebStorm/bin:$PATH # WEBSTORM
+export PATH=~/.local/bin:$PATH
 
 # FZF
 eval "$(fzf --bash)"
