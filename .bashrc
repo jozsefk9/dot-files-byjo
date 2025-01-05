@@ -3,7 +3,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# DEEPIN 16dec2024 1716
+# Endeavour OS Cinnamon 05jan2025 1014
 
 # If not running interactively, don't do anything
 # If not running interactively, don't do anything
