@@ -6,10 +6,8 @@
 # DEEPIN 16dec2024 1716
 
 # If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 export HISTFILESIZE=10000
@@ -33,21 +31,6 @@ PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
-# set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
-
-
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -74,14 +57,10 @@ fi
 
 # new PATH dec2024
 export PATH=~/bin:$PATH
-export PATH=~/bin/blender:$PATH # BLENDER
-export PATH=~/bin/btop/bin:$PATH # BTOP
-export PATH=~/bin/cudatext/GTK2:$PATH # CUDATEXT
-export PATH=~/bin/floorp:$PATH # FLOORP
-export PATH=~/bin/kitty/bin:$PATH # KITTY
-export PATH=~/bin/REAPER:$PATH # REAPER
-export PATH=~/bin/WebStorm/bin:$PATH # WEBSTORM
-export PATH=~/.local/bin:$PATH
+#export PATH=~/bin/cudatext/QT6:$PATH # CUDATEXT
+#export PATH=~/bin/floorp:$PATH # FLOORP
+#export PATH=~/bin/WebStorm/bin:$PATH # WEBSTORM
+#export PATH=~/.local/bin:$PATH
 
 # FZF
 eval "$(fzf --bash)"
