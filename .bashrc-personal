@@ -4,7 +4,7 @@
 helix_version="24.07"
 
 #export TERM=kitty
-export VISUAL=hx
+export VISUAL=helix
 export EDITOR="$VISUAL"
 
 export LANG=en_IL.UTF-8
@@ -85,7 +85,7 @@ function title {
 # Wrap Helix Editor in a function that sets the title with the arguments provided
 function hx {
     title "$@"
-    command ~/bin/helix-$helix_version-x86_64.AppImage "$@"
+    command helix "$@"
 }
 
 # YAZI start
