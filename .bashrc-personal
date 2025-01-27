@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 # .bashrc
 
-helix_version="24.07"
+# helix_version="24.07"
+helix_version="25.01.1"
 
 #export TERM=kitty
 export VISUAL=helix
@@ -61,6 +62,8 @@ alias pomuda='udisksctl power-off -b /dev/sda'
 alias pomudb='udisksctl power-off -b /dev/sdb'
 alias pomudc='udisksctl power-off -b /dev/sdc'
 alias info='~/info.sh'
+alias sync='sync && notify-send --icon=deepin-terminal --action=1="Got it" --urgency=critical "Sync is over!"'
+alias shfmt='shfmt -l -w -i 4'
 
 #alias l="eza -lahRT -L 1 --group-directories-first --time-style '+%d%b%Y @ %H^%M^%S'"
 #alias lm="eza -lahRT -L 1 -s modified -r --group-directories-first --time-style '+%d%b%Y @ %H^%M^%S'"
