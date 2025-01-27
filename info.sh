@@ -28,7 +28,8 @@ echo "      NEW YORK"
 TZ='America/New_York' date +"%A, %d. %B '%y. | %R"
 
 echo ""
-ncal -3wbS
+# ncal -3wbS
+cal -3ws
 
 echo "Kernel: "
 uname -r
