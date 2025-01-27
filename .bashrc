@@ -71,3 +71,6 @@ eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
 
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
+
+# Created by `pipx` on 2025-01-25 21:38:37
+export PATH="$PATH:/home/jk/.local/bin"
